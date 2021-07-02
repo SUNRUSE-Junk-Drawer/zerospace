@@ -19,6 +19,12 @@ In each directory, there is expected to be the following (see [an example](./src
 - An [index.ts](./src/example-with-tests/index.ts) file containing the functionality.
 - A [unit.ts](./src/example-with-tests/unit.ts) file containing the corresponding unit tests.
 
+#### Branding
+
+[logo.svg](./logo.svg) is used as an app icon and a splash screen.
+
+Other branding can be found in [webpack.config.ts](./webpack.config.ts), in the configuration for `FaviconsWebpackPlugin`.
+
 ## Deployment
 
 The [GitHub Action](./.github/workflows/continuous-integration.yaml) will build the SPA, upload it to a S3 bucket (configured to allow public HTTP reads), then invalidate a Cloudflare cache (which sits in front and provides HTTPS).

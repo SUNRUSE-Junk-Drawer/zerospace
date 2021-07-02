@@ -12,7 +12,7 @@ First, `npm install`.  Then, either `npm run prod` for a one-off, minified build
 
 [index.sass](./src/index.sass) must reference or contain all styling rules you want to be present.
 
-[index.ts](./src/index.ts) is executed on page load; the root React component is mounted here.
+[index.tsx](./src/index.tsx) is executed on page load; the root React component is mounted here.
 
 In each directory, there is expected to be the following (see [an example](./src/example-with-tests))
 
